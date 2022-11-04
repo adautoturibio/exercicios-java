@@ -6,7 +6,7 @@ public class Main {
 
         Scanner reader = new Scanner(System.in);
 
-        int codigo=0, vagas=0, candH=0, candM=0, candTotal=0, percM=0;
+        int codigo=0, vagas=0, candH=0, candM=0, candTotal=0;
         int cod[] = new int[100];
         int cpv[] = new int[100];
         int perc[] = new int[100];
@@ -61,6 +61,6 @@ public class Main {
         System.out.println("Curso com maior quantidade de canditados por vaga: "+index);
         System.out.println("Canditados por vagas: "+max);
         
-
+        reader.close();
     }
 }

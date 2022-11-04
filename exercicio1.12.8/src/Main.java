@@ -51,5 +51,6 @@ public class Main {
         //System.out.println("Porcentagem de mulheres que responderam sim: "+fsimPorcent);
         System.out.println("Porcentagem de homens que responderam não: "+mnaoPorcent);
 
+        reader.close();
     }
 }

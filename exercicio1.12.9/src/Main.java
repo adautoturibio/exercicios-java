@@ -40,5 +40,6 @@ public class Main {
 
         System.out.println("A porcentagem de crianças mortas é: "+mortalidade);
 
+        reader.close();
     }
 }

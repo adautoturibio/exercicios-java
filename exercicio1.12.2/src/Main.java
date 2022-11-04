@@ -44,6 +44,6 @@ public class Main {
         System.out.println("A média da altura das mulheres é: "+mediaM);
         System.out.println("O numero de homens nesse grupo é: "+numH);
 
-
+        reader.close();
     }
 }

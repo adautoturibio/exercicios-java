@@ -59,8 +59,6 @@ public class Main {
         System.out.println("Produtos entre 10% e 20% de lucro: "+l2);
         System.out.println("Produtos com >20% de lucro: "+l3);
 
-        
-
-        
+        reader.close();
     }
 }

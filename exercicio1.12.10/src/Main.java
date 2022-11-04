@@ -57,7 +57,7 @@ public class Main {
         System.out.println("\nCanal 7: "+c7+"%");
         System.out.println("\nCanal 12: "+c12+"%");
         
-        
+        reader.close();
 
     }
 }

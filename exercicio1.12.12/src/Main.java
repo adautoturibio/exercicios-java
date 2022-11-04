@@ -7,7 +7,7 @@ public class Main {
 
         Scanner reader = new Scanner(System.in);
         
-        int n = 3;
+        int n = 100;
         int mat[] = new int[n];
         int n1[] = new int[n];
         int n2[] = new int[n];

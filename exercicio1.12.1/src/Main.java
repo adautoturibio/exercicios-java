@@ -22,6 +22,7 @@ public class Main {
         } while (nova_idade != 0);{
             System.out.println("A media de idades é: " +media);
         } 
+        reader.close();
 
     }
 }

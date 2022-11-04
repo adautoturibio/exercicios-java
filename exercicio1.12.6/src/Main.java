@@ -44,7 +44,7 @@ public class Main {
         System.out.println("Massa final: "+massaF);
         System.out.println("Tempo: "+hr+" horas, "+min+" minutos e "+seg+" segundos.");
         
-       
+        reader.close();
     }
 }
 
