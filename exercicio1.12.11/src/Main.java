@@ -7,9 +7,9 @@ public class Main {
         Scanner reader = new Scanner(System.in);
 
         int codigo=0, vagas=0, candH=0, candM=0, candTotal=0, percM=0;
-        int cod[] = new int[10];
-        int cpv[] = new int[10];
-        int perc[] = new int[10];
+        int cod[] = new int[100];
+        int cpv[] = new int[100];
+        int perc[] = new int[100];
 
         
         for (int i=0; i<cod.length; i++) {
