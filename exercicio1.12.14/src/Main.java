@@ -19,8 +19,9 @@ public class Main {
         ArrayList<Integer> marcoB = new ArrayList<Integer>();
         int cA=0, cB=0;
 
+        int loop = 0;
         
-        for (int i = 0; i<9000000; i++){
+        while (loop==0) {
 
             // COLETANDO OS DADOS DAS QUILOMETRAGENS
             System.out.print("\nInforme o km da cidade A: ");
