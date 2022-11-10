@@ -5,6 +5,8 @@ public class Main {
 
     public static void main(String[] args) {
 
+
+        // DECLARANDO AS ARRAYS UTILIZADAS
         Scanner reader = new Scanner(System.in);
         ArrayList<Double> t20 = new ArrayList<Double>();
         ArrayList<Double> t30 = new ArrayList<Double>();
@@ -17,27 +19,30 @@ public class Main {
         ArrayList<Integer> marcoB = new ArrayList<Integer>();
         int cA=0, cB=0;
 
+        
         for (int i = 0; i<9000000; i++){
 
+            // COLETANDO OS DADOS DAS QUILOMETRAGENS
             System.out.print("\nInforme o km da cidade A: ");
             cA = reader.nextInt();
             
             System.out.print("Informe o km da cidade B: ");
             cB = reader.nextInt();
 
-            if (cA == cB){
+            if (cA == cB){ //FLAG
                 break;
             }
             marcoA.add(cA);
             marcoB.add(cB);
 
-            int e = cB-cA;
+            int e = cB-cA; //CALCULANDO O ESPAÇO ENTRE CIDADES
 
-            for (int v=20; v<81; v+=10){
+            for (int v=20; v<81; v+=10){ 
                 
-                double t = e/v;
+                double t = e/v; //CALCULANDO O TEMPO
                 
-                if (v==20){
+                //ADICIONANDO O TEMPO DE VIAGEM EM CADA ARRAY CORRESPONDENTE A VELOCIDADE
+                if (v==20){ 
                     t20.add(t);
                 }  
                 if (v==30){
@@ -61,6 +66,8 @@ public class Main {
             }
         }
 
+
+        // IMPRIMINDO OS VALORES CORRESPONDENTES AOS PARES DE CIDADES
         for (int i=0; i<marcoA.size(); i++){
             System.out.println("---------------------------------------");
             if (t20.get(i)>2){
@@ -107,6 +114,6 @@ public class Main {
             }
         }   
 
-        reader.close();
+        reader.close(); //FECHANDO O READER
     }
 }
