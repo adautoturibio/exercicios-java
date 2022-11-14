@@ -9,7 +9,7 @@ public class Main {
 
         ArrayList<Integer> num = new ArrayList<Integer>();
         ArrayList<Double> conta = new ArrayList<Double>();
-        double balanco=60, balMin=30.0, taxa=4, valor=0;
+        double balanco=60, balMin=30.0, taxa=4, valor=0; // EU DEFINI A PORCENTAGEM DA TAXA COBRADA
         int loop = 1, transNum=0, op=0;
 
         while(loop==1){
@@ -54,7 +54,7 @@ public class Main {
                 }
             }
 
-            for (int i = 0; i < num.size(); i++) {
+            for (int i = 0; i < num.size(); i++) { // PRINTANDO AS INFORMAÇÕES DAS CONTAS
                 System.out.println("\n----------------");
                 System.out.println("Numero da conta: "+num.get(i));
 
@@ -66,7 +66,7 @@ public class Main {
                 }
                 if (aux<30) {
                     balanco = 60-aux;
-                    taxa = (taxa*balanco)/100;
+                    taxa = (taxa*balanco)/100; // CALCULO DA TAXA
                     System.out.println("Débito: "+balanco+" reais.");
                     System.out.println("Taxa de serviço: "+taxa+" reais.");
                     System.out.println("Saldo total: "+(aux-taxa)+" reais.");
@@ -81,12 +81,8 @@ public class Main {
                     System.out.println("Saldo total: "+aux+" reais.");
                 }
             }
-                
-            
             reader.close();
         }
-         
-        
     }
           
     
