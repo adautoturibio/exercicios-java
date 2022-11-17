@@ -13,7 +13,6 @@ public class Main {
             }
             numerador -= 3;
         }
-
         System.out.println("S = "+s);
         
     }   
