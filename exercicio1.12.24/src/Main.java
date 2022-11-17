@@ -1,15 +1,14 @@
 public class Main {
     public static void main(String[] args) {
         
-        double n, s=0, q=2.04;
+        double s=1/1;
         
         for (int i=1; i<51; i++){
-            n=i;
-            double aux = Math.pow(2, n)/50;
-            s = aux*q;
+            s = s*1.5;
         }
         System.out.print(s);
     }   
+
 }      
 
           
